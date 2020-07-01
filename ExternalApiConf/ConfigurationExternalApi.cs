@@ -7,9 +7,9 @@ namespace BackendTest.ExternalApiConf
 {
     public class ConfigurationExternalApi : IConfigurationExternalApi
     {
-        public string BaseUrl()
+        public string BaseUrl(string EndPoint)
         {
-            return $"{this.ExternalUrlApi()}{this.CurrentExternalUrlApiVersion()}";
+            return $"{this.ExternalUrlApi()}{this.CurrentExternalUrlApiVersion()}{EndPoint}";
         }
 
         public string CurrentExternalUrlApiVersion()

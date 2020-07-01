@@ -7,7 +7,7 @@ namespace BackendTest.ExternalApiConf
 {
     interface IConfigurationExternalApi
     {
-        string BaseUrl();
+        string BaseUrl(string EndPoint);
         string ExternalUrlApi();
         string CurrentExternalUrlApiVersion();
     }
